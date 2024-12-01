@@ -22,6 +22,10 @@ The next generation of Nanome: lightweight, lower friction, and seamlessly integ
     Built a lightweight and efficient architecture, lowering the barrier for adoption and improving usability.
     Enhanced real-time collaboration features based on user feedback and industry needs.
 
+<video width="800" height="auto" controls>
+  <source src="images/nanome_ai_collaboration.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## About Me
 
