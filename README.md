@@ -25,4 +25,5 @@ The next generation of Nanome: lightweight, lower friction, and seamlessly integ
 
 ## About Me
 
+[LinkedIn](https://www.linkedin.com/in/ethan-vander-horn-46556b107/)
 I have over 8 years of experience developing Unity applications, with a focus on creating XR tools for real-time collaboration and scientific applications. My expertise lies in building efficient systems, designing user-friendly interfaces, and optimizing performance for hardware-constrained environments.
