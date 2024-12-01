@@ -23,7 +23,7 @@ The next generation of Nanome: lightweight, lower friction, and seamlessly integ
     Enhanced real-time collaboration features based on user feedback and industry needs.
 
 <video width="800" height="auto" controls>
-  <source src="images/nanome_ai_collaboration.mp4" type="video/mp4">
+  <source src="https://nanome.s3.us-west-1.amazonaws.com/resources/mara_h264_1080.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
