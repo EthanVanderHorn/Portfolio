@@ -54,9 +54,25 @@ main {
     margin: 0 auto;
 }
 
+/* Project section styles */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align the content to the top */    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project-media{
+    padding-top:10px;
+}
+
 .project-text {
-    flex: 2;
     max-width: 600px;
+    margin-top: 0; /* Remove any margin if necessary */
+    flex-grow: 0; /* Ensure it doesn’t take up extra space */
 }
 
 .about h2
@@ -84,7 +100,6 @@ section.about h2 {
 /* About section styles */
 .about {
     text-align: center;
-    margin-top: 40px;
     font-size: 1.2rem;
     color: var(--secondary-text-color);
 }
@@ -127,19 +142,6 @@ footer {
     /* Keep aspect ratio intact */
 }
 
-/* Project section styles */
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
 /* Link and Highlight styling */
 a {
     color: var(--link-color) !important;
@@ -155,8 +157,7 @@ a:hover {
 .about {
     max-width: 800px;  /* Restrict width for better readability */
     text-align: left;  /* Align text to the left */
-    margin: 20px auto; /* Center the section horizontally */
-    padding: 20px; /* Add some padding for spacing */
+    margin: 0px auto; /* Center the section horizontally */
     border-radius: 8px;  /* Optional: rounded corners for a softer look */
 }
 

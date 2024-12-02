@@ -18,12 +18,56 @@
         </div>
     </header>
     <main>
-        <section class="about">
-            <h2>👨‍💻 About Me</h2>
-            <p>I have over 8 years of experience developing Unity applications. My expertise lies in building efficient systems, designing user-friendly interfaces, and optimizing performance for hardware-constrained environments. 
-            </p>
+        <section class="project" id="me">
+            <div class="project-media">
+                <div id="me-carousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/me.jpg" class="d-block w-100" alt="Sheila Image">
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#me-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#me-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="project-text">
+                <h2>👨‍💻 About Me</h2>
+                <p>I have over 8 years of experience developing Unity and XR applications.</p> <p> My expertise lies in building
+                    efficient
+                    systems, creating user-centered applications, and optimizing performance for hardware-constrained
+                    environments.</p>
+            </div>
         </section>
         <section class="project" id="nanome">
+            <div class="project-text">
+                <h2>🧬 Nanome</h2>
+                <p>A fully-featured molecular visualizer with a robust plugin system, supporting 3D recording and
+                    playback for collaborative workflows.</p>
+                <ul>
+                    <li>Rapidly iterated on a Unity application from initial idea phase to revenue generating
+                        product.</li>
+                    <li>Collaborated with developers, designers, and specialists to create user-focused solutions.
+                    </li>
+                    <li>Worked directly with customers and industry experts, playing a major role in identifying and
+                        prioritizing features.</li>
+                    <li>Developed XR interactions for advanced molecular visualization and manipulation.</li>
+                    <li>Contributed to the robust plugin system, enabling extensibility and customization by users.
+                    </li>
+                    <li>Implemented 3D recording and playback features to enhance collaboration and presentation.
+                    </li>
+                    <li>Optimized the platform for performance on resource-constrained devices like Oculus Quest 1.
+                    </li>
+                </ul>
+            </div>
             <div class="project-media">
                 <div id="nanome-carousel" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
@@ -56,20 +100,6 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </div>
-            <div class="project-text">
-                <h2>🧬 Nanome</h2>
-                <p>A fully-featured molecular visualizer with a robust plugin system, supporting 3D recording and
-                    playback for collaborative workflows.</p>
-                <ul>
-                    <li>Rapidly iterated on a Unity application from initial idea phase to revenue generating product.</li>
-                    <li>Collaborated with developers, designers, and specialists to create user-focused solutions.</li>
-                    <li>Worked directly with customers and industry experts, playing a major role in identifying and prioritizing features.</li>
-                    <li>Developed XR interactions for advanced molecular visualization and manipulation.</li>
-                    <li>Contributed to the robust plugin system, enabling extensibility and customization by users.</li>
-                    <li>Implemented 3D recording and playback features to enhance collaboration and presentation.</li>
-                    <li>Optimized the platform for performance on resource-constrained devices like Oculus Quest 1.</li>
-                </ul>
             </div>
         </section>
 
@@ -112,10 +142,13 @@
                     assistant, "Mara."</p>
                 <ul>
                     <li>Designed intuitive XR interactions to deliver seamless collaborative experiences.</li>
-                    <li>Applied Clean Architecture principles alongside Dependency Injection and adopted CQRS principles to support efficient, data-centric workflows, ensuring modularity and refactorability.</li>
+                    <li>Applied Clean Architecture principles alongside Dependency Injection and adopted CQRS
+                        principles to support efficient, data-centric workflows, ensuring modularity and
+                        refactorability.</li>
                     <li>Integrated "Mara," Nanome's AI assistant, to provide intelligent insights and enhance
                         productivity.</li>
-                    <li>Built a lightweight and efficient architecture, lowering the barrier for adoption and improving
+                    <li>Built a lightweight and efficient architecture, lowering the barrier for adoption and
+                        improving
                         usability.</li>
                     <li>Enhanced real-time collaboration features based on user feedback and industry needs.</li>
                 </ul>
@@ -123,6 +156,25 @@
         </section>
 
         <section class="project" id="calcflow">
+            <div class="project-text">
+                <h2>🔢 Calcflow</h2>
+                <p>An open-source, intuitive VR tool designed to simplify vector calculus concepts through immersive
+                    3D
+                    visualizations for students, educators, and engineers.</p>
+                <ul>
+                    <li>Developed a parametric graphing utility to map 2D points into 3D space, enhancing
+                        mathematical
+                        visualization.</li>
+                    <li>Created interactive vector field visualizations to help users intuitively explore complex
+                        concepts.</li>
+                    <li>Implemented real-time cross product and vector addition modules to enable interactive
+                        learning.
+                    </li>
+                    <li>Built a double integral grapher to support advanced calculus concepts in an immersive
+                        learning
+                        environment.</li>
+                </ul>
+            </div>
             <div class=" media">
                 <div id="calcflow-carousel" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
@@ -152,21 +204,6 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </div>
-            <div class="project-text">
-                <h2>🔢 Calcflow</h2>
-                <p>An open-source, intuitive VR tool designed to simplify vector calculus concepts through immersive 3D
-                    visualizations for students, educators, and engineers.</p>
-                <ul>
-                    <li>Developed a parametric graphing utility to map 2D points into 3D space, enhancing mathematical
-                        visualization.</li>
-                    <li>Created interactive vector field visualizations to help users intuitively explore complex
-                        concepts.</li>
-                    <li>Implemented real-time cross product and vector addition modules to enable interactive learning.
-                    </li>
-                    <li>Built a double integral grapher to support advanced calculus concepts in an immersive learning
-                        environment.</li>
-                </ul>
             </div>
         </section>
     </main>
