@@ -1,6 +1,6 @@
 # **My Developer Portfolio**
 
-Welcome to my portfolio! I’m a Unity Developer specializing in XR applications, creating optimized, modular, and interactive experiences.
+[Welcome to my portfolio!](https://ethanvanderhorn.github.io/Portfolio/) I’m a Unity Developer specializing in XR applications, creating optimized, modular, and interactive experiences.
 
 ---
 
