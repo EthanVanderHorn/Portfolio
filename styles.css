@@ -1,173 +1,167 @@
-/* Basic Reset */
+/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --title-color: #f5c800;
 }
 
-/* General Body Styling */
+/* Define dark mode color variables */
+:root {
+    --primary-bg-color: #333;
+    --primary-text-color: #f4f4f4;
+    --highlight-color: #ffcc00;
+    /* Yellow for highlights */
+    --secondary-text-color: #bbb;
+    --link-color: #ff9900;
+    /* Orange for links and accents */
+}
+
+/* Overall page styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #E0E0E0;
-    background-color: #121212;
+    background-color: var(--primary-bg-color) !important;
+    color: var(--primary-text-color) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
     padding: 20px;
 }
 
-/* Header Styling */
+/* Header styles */
 header {
-    background-color: #1E1E1E;
-    color: #F0F0F0;
-    padding: 40px 20px;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 header h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--title-color);
+    font-size: 2.5rem;
+    color: var(--primary-text-color);
 }
 
 header p {
     font-size: 1.2rem;
-    margin-top: 10px;
-    color: #B0B0B0;
+    color: var(--secondary-text-color);
 }
 
-/* Main Content */
+/* Main content area */
 main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #1A1A1A;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-/* Section Titles */
-h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: var(--title-color);
+.project-text {
+    flex: 2;
+    max-width: 600px;
 }
 
-/* List Styling */
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-ul li {
-    margin: 10px 0;
-    color: #D1D1D1;
-}
-
-/* Individual Project Section Styling */
-section {
-    margin-bottom: 30px;
-}
-
-section#nanome, section#nanome-ai {
-    background-color: #2A2A2A;
-    border-radius: 8px;
-    padding: 20px;
-}
-
-video {
-    display: block;
-    margin-top: 20px;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-/* About Section */
-.about {
-    background-color: #2A2A2A;
-    padding: 20px;
-    border-radius: 8px;
-    color: #D1D1D1;
-}
-
-a {
-    color: #00B0FF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #888888;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #00B0FF;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.project {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
+.about h2
 .project h2 {
-    color: #00B0FF;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-text-color) !important;
+}
+
+section.about h2 {
+    color: var(--primary-text-color) !important;
 }
 
 .project ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 20px;
 }
 
-.project ul li {
-    margin: 10px 0;
+.project li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
     font-size: 1rem;
-    line-height: 1.5;
+    color: var(--primary-text-color);
+    width: 100%;
 }
 
-.project-image {
-    text-align: left;
-    margin: 20px 0;
+.highlight {
+    color: var(--highlight-color) !important;
 }
 
-.project-image img {
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
+.carousel-inner {
+    max-width: 750px;
+    /* Match the video width */
+    height: 420px;
+    /* Set a fixed height to prevent resizing */
+    margin: 0 20px;
+    overflow: hidden;
+    /* Ensure content stays within bounds */
+    display: flex;
+    align-items: center;
+    /* Vertically center the carousel content */
 }
 
-.project-links {
-    margin-top: 20px;
+.carousel-item img,
+.carousel-item video {
+    max-width: 100%;
+    width: 750px;
+    max-height: 100%;
+    height: 420px;
+    border-radius: 15px;
+    /* Adjust the value for the desired roundness */
+    object-fit: contain;
+    /* Keep aspect ratio intact */
 }
 
-.project-links a {
-    color: #00B0FF;
+/* Project section styles */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Link and Highlight styling */
+a {
+    color: var(--link-color) !important;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.project-links a:hover {
+a:hover {
+    color: var(--highlight-color) !important; /* Slightly darker orange for hover effect */
     text-decoration: underline;
+}
+
+/* About Section Styles */
+.about {
+    max-width: 800px;  /* Restrict width for better readability */
+    text-align: left;  /* Align text to the left */
+    margin: 20px auto; /* Center the section horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 8px;  /* Optional: rounded corners for a softer look */
+}
+
+.about p {
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    line-height: 1.7;   /* Improve line spacing */
+    color: #f4f4f4; /* Light text color */
 }

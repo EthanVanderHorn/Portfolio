@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan Vander-Horn - Unity Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,76 +17,168 @@
             <p>Unity Developer | XR Specialist | Optimized System Architect</p>
         </div>
     </header>
-
     <main>
-        <!-- Nanome Project -->
-        <section class="project" id="nanome">
-            <h2>🧬 Nanome</h2>
-            <p>A fully-featured molecular visualizer with a robust plugin system, supporting 3D recording and playback for collaborative workflows.</p>
-            <ul>
-                <li>Developed XR interactions for advanced molecular visualization and manipulation.</li>
-                <li>Contributed to the robust plugin system, enabling extensibility and customization by users.</li>
-                <li>Implemented 3D recording and playback features to enhance collaboration and presentation.</li>
-                <li>Optimized the platform for performance on resource-constrained devices like Oculus Quest 1.</li>
-            </ul>
-        </section>
-
-        <!-- Nanome AI Project -->
-        <section class="project" id="nanome-ai">
-            <h2>🤖 Nanome AI</h2>
-            <p>The next generation of Nanome: lightweight, lower friction, and seamlessly integrated with the AI assistant, "Mara."</p>
-            <ul>
-                <li>Designed intuitive XR interactions to deliver seamless collaborative experiences.</li>
-                <li>Integrated "Mara," Nanome's AI assistant, to provide intelligent insights and enhance productivity.</li>
-                <li>Built a lightweight and efficient architecture, lowering the barrier for adoption and improving usability.</li>
-                <li>Enhanced real-time collaboration features based on user feedback and industry needs.</li>
-            </ul>
-            <video width="640" controls>
-                <source src="https://nanome.s3.us-west-1.amazonaws.com/resources/mara_h264_1080.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-
-        <!-- Calcflow Project -->
-        <section class="project" id="calcflow">
-            <h2>🔢 Calcflow</h2>
-            <p>An open-source, intuitive VR tool designed to simplify vector calculus concepts through immersive 3D visualizations for students, educators, and engineers.</p>
-            
-            <!-- Calcflow Image -->
-            <div class="project-image">
-                <img src="https://scontent-lax3-2.oculuscdn.com/v/t64.5771-25/12504637_1155793424499184_4780524309569339392_n.jpg?stp=dst-jpg_q92_s1440x1440&_nc_cat=107&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=1PrdYOBX4aYQ7kNvgEWVN6F&_nc_zt=3&_nc_ht=scontent-lax3-2.oculuscdn.com&oh=00_AYA885nJmcfLisqbMUgdjVSWKeLrgbBCTSfG5T6n21DVHg&oe=6752E808" alt="Calcflow Interface">
-            </div>
-            
-            <ul>
-                <li>Developed a parametric graphing utility to map 2D points into 3D space, enhancing mathematical visualization.</li>
-                <li>Created interactive vector field visualizations to help users intuitively explore complex concepts.</li>
-                <li>Implemented real-time cross product and vector addition modules to enable interactive learning.</li>
-                <li>Built a double integral grapher to support advanced calculus studies in a 3D immersive environment.</li>
-                <li>Improved accessibility by offering an intuitive interface that allows users to manipulate parameters and immediately see the effect on 3D visualizations.</li>
-            </ul>
-            
-            <!-- Links -->
-            <div class="project-links">
-                <p>Explore the open-source repository: <a href="https://github.com/matryx/calcflow" target="_blank">GitHub Repo</a></p>
-                <p>Check it out on the Quest Store: <a href="https://www.meta.com/experiences/pcvr/calcflow/1143046855744783/" target="_blank">Calcflow on Quest Store</a></p>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
         <section class="about">
-            <h2>About Me</h2>
-            <p>
-                I have over 8 years of experience developing Unity applications, with a focus on creating XR tools for real-time collaboration and scientific applications.
-                My expertise lies in building efficient systems, designing user-friendly interfaces, and optimizing performance for hardware-constrained environments.
+            <h2>👨‍💻 About Me</h2>
+            <p>I have over 8 years of experience developing Unity applications, with a focus on creating XR tools for real-time collaboration and scientific applications. My expertise lies in building efficient systems, designing user-friendly interfaces, and optimizing performance for hardware-constrained environments. 
             </p>
-            <a href="https://www.linkedin.com/in/ethan-vander-horn-46556b107/" target="_blank">View my LinkedIn</a>
+        </section>
+        <section class="project" id="nanome">
+            <div class="project-media">
+                <div id="nanome-carousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://miro.medium.com/v2/resize:fit:960/0*YfpUrNhlbGKj0sVj"
+                                class="d-block w-100" alt="Sheila Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://media1.giphy.com/media/Gv3LnMAq0z8pkRv74C/giphy.gif?cid=6c09b952xzdtzpv99zltdk93q78aidn70vtl0v2jd78kz8aw&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
+                                class="d-block w-100" alt="Sheila Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://nanome.ai/_nuxt/img/video-1.d461cbe.jpg" class="d-block w-100"
+                                alt="Sheila Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://nanome.ai/_nuxt/img/video-2.3b39546.jpg" class="d-block w-100"
+                                alt="Steve Image">
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#nanome-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#nanome-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="project-text">
+                <h2>🧬 Nanome</h2>
+                <p>A fully-featured molecular visualizer with a robust plugin system, supporting 3D recording and
+                    playback for collaborative workflows.</p>
+                <ul>
+                    <li>Rapidly iterated on a Unity application from initial idea phase to revenue generating product.</li>
+                    <li>Collaborated with developers, designers, and specialists to create user-focused solutions.</li>
+                    <li>Worked directly with customers and industry experts, playing a major role in identifying and prioritizing features.</li>
+                    <li>Developed XR interactions for advanced molecular visualization and manipulation.</li>
+                    <li>Contributed to the robust plugin system, enabling extensibility and customization by users.</li>
+                    <li>Implemented 3D recording and playback features to enhance collaboration and presentation.</li>
+                    <li>Optimized the platform for performance on resource-constrained devices like Oculus Quest 1.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project" id="nanome-ai">
+            <div class="project-media">
+                <div id="nanome-ai-carousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="d-block w-100" controls>
+                                <source src="https://nanome.s3.us-west-1.amazonaws.com/resources/mara_h264_1080.mp4"
+                                    type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100" controls>
+                                <source
+                                    src="https://nanome.s3.us-west-1.amazonaws.com/resources/Main%201080p%20h264.mp4"
+                                    type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#nanome-ai-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#nanome-ai-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="project-text">
+                <h2>🤖 Nanome AI</h2>
+                <p>The next generation of Nanome: lightweight, lower friction, and seamlessly integrated with the AI
+                    assistant, "Mara."</p>
+                <ul>
+                    <li>Designed intuitive XR interactions to deliver seamless collaborative experiences.</li>
+                    <li>Applied Clean Architecture principles alongside Dependency Injection and adopted CQRS principles to support efficient, data-centric workflows, ensuring modularity and refactorability.</li>
+                    <li>Integrated "Mara," Nanome's AI assistant, to provide intelligent insights and enhance
+                        productivity.</li>
+                    <li>Built a lightweight and efficient architecture, lowering the barrier for adoption and improving
+                        usability.</li>
+                    <li>Enhanced real-time collaboration features based on user feedback and industry needs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project" id="calcflow">
+            <div class=" media">
+                <div id="calcflow-carousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <!-- Second Media Item (Example) -->
+                        <div class="carousel-item active">
+                            <img src="https://scontent-lax3-2.oculuscdn.com/v/t64.5771-25/12504637_1155793424499184_4780524309569339392_n.jpg?stp=dst-jpg_q92_s1440x1440&_nc_cat=107&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=1PrdYOBX4aYQ7kNvgEWVN6F&_nc_zt=3&_nc_ht=scontent-lax3-2.oculuscdn.com&oh=00_AYA885nJmcfLisqbMUgdjVSWKeLrgbBCTSfG5T6n21DVHg&oe=6752E808"
+                                alt="Calcflow Interface">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://scontent-lax3-1.oculuscdn.com/v/t64.5771-25/12504635_727938474049470_1020962572922257408_n.jpg?stp=dst-jpg_q92_s1440x1440&_nc_cat=109&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=2FFgkdsFZR8Q7kNvgECPqXY&_nc_zt=3&_nc_ht=scontent-lax3-1.oculuscdn.com&oh=00_AYA8VM8EKFxYkOyfUEN-mzSNKXw9cUBqZ4dCZKAj4OpLaQ&oe=6753060B"
+                                class="d-block w-100" alt="Calcflow vector graph">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://scontent-lax3-2.oculuscdn.com/v/t64.5771-25/12482214_335725660143038_2250426570906796032_n.jpg?stp=dst-jpg_q92_s1440x1440&_nc_cat=103&ccb=1-7&_nc_sid=6e7a0a&_nc_ohc=0JMLc9wa0NEQ7kNvgE1pRFL&_nc_zt=3&_nc_ht=scontent-lax3-2.oculuscdn.com&oh=00_AYDwMyPBYvUDieuorSE0tct2zuuPTIz0bevoZHjNEPXMJA&oe=675324D7"
+                                class="d-block w-100" alt="Calcflow vector graph">
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#calcflow-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#calcflow-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="project-text">
+                <h2>🔢 Calcflow</h2>
+                <p>An open-source, intuitive VR tool designed to simplify vector calculus concepts through immersive 3D
+                    visualizations for students, educators, and engineers.</p>
+                <ul>
+                    <li>Developed a parametric graphing utility to map 2D points into 3D space, enhancing mathematical
+                        visualization.</li>
+                    <li>Created interactive vector field visualizations to help users intuitively explore complex
+                        concepts.</li>
+                    <li>Implemented real-time cross product and vector addition modules to enable interactive learning.
+                    </li>
+                    <li>Built a double integral grapher to support advanced calculus concepts in an immersive learning
+                        environment.</li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ethan Vander-Horn</p>
+        <p>Contact: <a href="mailto:ethan.vanderhorn@gmail.com">ethan.vanderhorn@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/ethan-vander-horn-46556b107/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/EthanVanderHorn" target="_blank">GitHub</a>
+        </p>
     </footer>
-
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
