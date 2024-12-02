@@ -153,6 +153,17 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Style for links near section headers */
+.section-link {
+    margin-left: 10px;
+    font-size: 1rem; /* Adjust size as needed */
+    text-decoration: none; /* Optional: remove underline */
+}
+
+.section-link:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
 /* About Section Styles */
 .about {
     max-width: 800px;  /* Restrict width for better readability */
